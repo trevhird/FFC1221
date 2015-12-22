@@ -14,6 +14,11 @@
 		<!--Modernizr-->
 		<script src="add_ons/product-quick-view/js/modernizr.js">
 		</script>
+
+	<!--Begin Contact Form Links-->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/style.css"> 
+	<!--End Contact Form Links-->
 		
 		<!--jQuery easing-->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
@@ -141,17 +146,32 @@
 
 
 
-						<h1>Sweet Chocolatey Love</h1>
+						<h1>Fountains of Decadence... and a Whole Lot More!</h1>
 					</div>
 				</div>
 				
 				<div class="cd-scrolling-bg cd-color-2" id="AboutUs">
 					<div class="cd-container">
-						<h2>About Us</h2>
-						<p>
-						You know what they say...Chocolate is the way to everyones heart.
-						Why not find your way with us! Serving Vancouver's chocolate needs since
-						1990. <!--Mark to fix this written content-->
+						<h2 style="font-weight:bold">About Us</h2>
+						<br>
+
+Our service to you includes the utmost care and attention to your requirements — whether it be a chocolate fountain/fondue for rent or to purchase. From home to commercial use, we strive to help you decide which application would best suite your needs.  Our chocolate gifts customized just for you are definitely a special product. They include a wide range of personalized graphic services and the setting up of your designs for memorable events.
+<br><br>
+<h3 style="font-weight:bold">Our Services and Service Area</h3>
+<br>
+Rentals — Falling for Chocolate’s fountains/fondues are available for rent throughout the Fraser Valley, Vancouver and the lower mainland. Our pricing includes all delivery and pick up charges, unless otherwise noted.  A phone call, email or completing our online form ensures a personal consult to meet your needs.
+<br><br>
+Sales — Our fountain sales are Canada-wide and feature the superb “Sephra” fountains which are available in all sizes for both home and commercial use.  The Sephra fountains are an ideal option for both home use and commercial venues.  Their unique features make them stand out and are the technologiycal industry standard in the fountain industry.  We are very excited to be able to offer the world’s no. 1 chocolate fountain!
+<br><br>
+Our chocolate is of the finest quality made by Callebaut and Belcolade in Belgium and is available in milk, dark and white flavours. And how about having pink or a special colour to go with your event theme!?  We also supply other products that compliment the fountains such as fresh fruit, dessert items, a wide dipping assortment and skewers.
+<br><br>
+<h3 style="font-weight:bold">It’s the Special Event...</h3>
+<br>
+We keep our fountains well maintained and guarantee they are in excellent working condition. We pride ourselves on showing the utmost respect for your event. Consequently our attendants come attired in professional logoed attire so you know who we are!
+<br><br>
+<h3 style="font-weight:bold">How About Some Help?</h3>
+<br>
+Our attendants are available to hire for the duration of your event if you require someone to oversee the fountain and dipping items. In most cases, however, your caterer will oversee the replenishing of the dipping items. Please feel free to inquire if you are needing assistance.
 						</p>
 					</div>
 				</div>
@@ -184,18 +204,114 @@
 						<h1>Contact Us</h1>
 					</div>
 				</div>
-				
+				<section id="event_info">
 				<div class="cd-scrolling-bg cd-color-2">
 					<div class="cd-container">
-						<h2>Let us know what you're looking for!</h2>
-						<p>
-						[insert contact form here] <!--Mark's job - create contact form. Request date. Which fountain you want.  Your contact information.  Event details.  Name.  Email.  Phone.  Inquiry.   Make this form using CodyHouse templates or anything else I can find.  CSS Tricks has snippets too.  Add email scrambler.-->
-						</p>
+			
+						
+<form class="cd-form floating-labels">
+		<fieldset>
+			<legend>Event Info</legend>
+
+			<div class="error-message">
+				<p>Please enter a valid email address</p>
+			</div>
+
+			<div class="icon">
+				<label class="cd-label" for="cd-name">Name</label>
+				<input class="user" type="text" name="cd-name" id="cd-name" required>
+		    </div> 
+
+		    <div class="icon">
+		    	<label class="cd-label" for="cd-company">Phone</label>
+				<input class="company" type="text" name="cd-company" id="cd-company">
+		    </div> 
+
+		    <div class="icon">
+		    	<label class="cd-label" for="cd-email">Email</label>
+				<input class="email error" type="email" name="cd-email" id="cd-email" required>
+		    </div>
+		</fieldset>
+
+		<fieldset>
+			<legend>Event Info</legend>
+
+			<div>
+				<h4>Guests</h4>
+
+				<p class="cd-select icon">
+					<select class="budget">
+						<option value="0">Number of Guests</option>
+						<option value="1">&lt; 50</option>
+						<option value="2">50 - 100</option>
+						<option value="3">&gt; 100</option>
+					</select>
+				</p>
+			</div> 
+
+			<div>
+				<h4>Fountain Type</h4>
+
+				<ul class="cd-form-list">
+					<li>
+						<input type="radio" name="radio-button" id="cd-radio-1" checked>
+						<label for="cd-radio-1">Small Fountain</label>
+					</li>
+						
+					<li>
+						<input type="radio" name="radio-button" id="cd-radio-2">
+						<label for="cd-radio-2">Large Fountain</label>
+					</li>
+
+					<li>
+						<input type="radio" name="radio-button" id="cd-radio-3">
+						<label for="cd-radio-3">Double Fountain</label>
+					</li>
+				</ul>
+			</div>
+
+			<div>
+				<h4>Features</h4>
+
+				<ul class="cd-form-list">
+					<li>
+						<input type="checkbox" id="cd-checkbox-1">
+						<label for="cd-checkbox-1">Milk Chocolate</label>
+					</li>
+
+					<li>
+						<input type="checkbox" id="cd-checkbox-2">
+						<label for="cd-checkbox-2">Dark Chocolate</label>
+					</li>
+
+					<li>
+						<input type="checkbox" id="cd-checkbox-3">
+						<label for="cd-checkbox-3">White Chocolate</label>
+					</li>
+				</ul>
+			</div>
+
+			<div class="icon">
+				<label class="cd-label" for="cd-textarea">Event Description &amp; Special Instructions</label>
+      			<textarea class="message" name="cd-textarea" id="cd-textarea" required></textarea>
+			</div>
+
+			<div>
+		      	<input type="submit" value="Send Message">
+		    </div>
+		</fieldset>
+	</form>
+
+
+
+
 					</div>
 				</div>
+
+
+				</section>
 			</main>
-		
-		<!--Script for Resposive header-->
+
 		<script>
 		jQuery(document).ready(function($){
 			//open-close submenu on mobile
@@ -205,17 +321,9 @@
 		});
 		</script>
 		
-		
-		<!--Script for altering svg extension to png using Modernizr when browser doesnt support svg-->
-		<script>
-		$(document).ready(function () {
-    	if (!Modernizr.svg) {
-        $('img[src$=".svg"]').each(function() {
-            var $img = $(this);
-            $img.attr('src', $img.attr('src').replace(/svg$/, 'png'));
-        });
-    }
-});
-		</script>
+		<script src="add_ons/product-quick-view/js/velocity.min.js"></script>
+		<script src="add_ons/product-quick-view/js/main.js"></script>
+<!--Begin Contact Form Scripts--> <script src="js/jquery-2.1.1.js"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery --> <!--Eng Contact form Scripts-->
 	</body>
 </html>
