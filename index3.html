@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, intial-scale=1">
+		<title>Falling For Chocolate | Chocolate Fountains | Chocolate Love</title>
+		<!--CSS RESET-->
+		<link rel="stylesheet" href="style/reset.css">
+		<!--main stylesheet for site-->
+		<link rel="stylesheet" href="style/scrolling.css">
+		
+		<!--jQuery-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<!--Modernizr-->
+		<script src="add_ons/product-quick-view/js/modernizr.js">
+		</script>
+		
+		<!--jQuery easing-->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+		<!--Script for navigation scrolling to elements on page-->
+		<script src="add_ons/dist/jquery.scroller.js"></script>
+		<!--inline script for scroller.js-->
+		<script>
+        $(function(){
+            $('a').scroller({
+
+              duration: 1000,
+
+              easing: 'easeInOutExpo'
+            });
+        });
+    </script>
+    <style type="text/css">
+.cd-intro-content h1,
+.cd-intro-content p,
+.cd-intro-content .cd-btn {
+  opacity: 0;
+  animation-delay: 0.3s;
+  animation-fill-mode: forwards;
+}
+ 
+.bouncy.cd-intro-content h1 {
+  animation-name: cd-bounce-right;
+}
+ 
+.bouncy.cd-intro-content p {
+  animation-name: cd-bounce-left;
+}
+ 
+.bouncy.cd-intro-content h1,
+.bouncy.cd-intro-content p {
+  animation-duration: 0.6s;
+}
+ 
+.bouncy.cd-intro-content .cd-btn {
+  animation-name: cd-bounce-rotate;
+  animation-duration: 0.5s;
+}
+ 
+.bouncy.cd-intro-content .cd-btn.main-action {
+  animation-delay: 0.4s;
+}
+ 
+@keyframes cd-bounce-right {
+  0% {
+    opacity: .2;
+    transform: translateX(-200px);
+  }
+  60% {
+    opacity: .7;
+    transform: translateX(15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+ 
+@keyframes cd-bounce-left {
+  0% {
+    opacity: .2;
+    transform: translateX(200px);
+  }
+  60% {
+    opacity: .7;
+    transform: translateX(-15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+ 
+@keyframes cd-bounce-rotate {
+  0% {
+    opacity: .2;
+    transform: perspective(800px) rotateX(-80deg);
+  }
+  20% {
+    opacity: 1;
+  }
+  60% {
+    transform: perspective(800px) rotateX(20deg);
+  }
+  100% {
+    opacity: 1;
+    transform: perspective(800px) rotateX(0);
+  }
+}
+    </style>		
+	</head>
+
+	<body>
+		<header class="cd-header">
+			<div id="cd-logo">
+				<a href="#0"> <img src="img/FFClogo.svg" alt="logo"> </a>
+			</div>
+			
+			<nav class="cd-main-nav">
+				<ul>
+					<li><a href="#AboutUs">About us</a></li>
+					<li><a href="#Fountains">Fountains</a></li>
+					<li><a href="#ContactUs">Contact Us</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main class="cd-main-content">
+				
+				<div class="cd-fixed-bg cd-bg-1">
+					<div class="cd-intro">
+						<div class="cd-intro-content bouncy">
+		<h1>Animated Intro Section</h1>
+		<p>A collection of text effects for the intro section of your website</p>
+		<div class="action-wrapper">
+			<a href="#0" class="cd-btn main-action">Get started</a>
+			<a href="#0" class="cd-btn">Learn More</a>
+		</div>
+	</div>
+
+
+
+
+						<h1>Sweet Chocolatey Love</h1>
+					</div>
+				</div>
+				
+				<div class="cd-scrolling-bg cd-color-2" id="AboutUs">
+					<div class="cd-container">
+						<h2>About Us</h2>
+						<p>
+						You know what they say...Chocolate is the way to everyones heart.
+						Why not find your way with us! Serving Vancouver's chocolate needs since
+						1990. <!--Mark to fix this written content-->
+						</p>
+					</div>
+				</div>
+				
+				<div class="cd-fixed-bg cd-bg-2" id="Fountains">
+					<div class="cd-intro">
+						<h1>Fountains</h1>
+						<!--Trevor will add an animation of rental and sales icons then add a separate page for both rentals and sales-->
+					</div>
+				</div>
+				
+				<div class="cd-scrolling-bg cd-color-2">
+					<div class="cd-container">
+						<h2>What we do Best</h2>
+						<p>
+						Whatever the event our fountains will satisfy any customer. 
+						</p>
+						<a href="#" class="box">
+	  						<h2><span>Rentals</span></h2>
+	  						<h3>Click for More Details</h3>
+						</a>
+						<a href="#" class="box">
+	  						<h2><span>Sales</span></h2>
+	  						<h3>Click for More Details</h3>
+						</a>
+						</div>
+				</div>
+				<div class="cd-fixed-bg cd-bg-3" id="ContactUs">
+					<div class="cd-intro">
+						<h1>Contact Us</h1>
+					</div>
+				</div>
+				
+				<div class="cd-scrolling-bg cd-color-2">
+					<div class="cd-container">
+						<h2>Let us know what you're looking for!</h2>
+						<p>
+						[insert contact form here] <!--Mark's job - create contact form. Request date. Which fountain you want.  Your contact information.  Event details.  Name.  Email.  Phone.  Inquiry.   Make this form using CodyHouse templates or anything else I can find.  CSS Tricks has snippets too.  Add email scrambler.-->
+						</p>
+					</div>
+				</div>
+			</main>
+		
+		<!--Script for Resposive header-->
+		<script>
+		jQuery(document).ready(function($){
+			//open-close submenu on mobile
+			$('.cd-main-nav').on('click', function(event){
+				if($(event.target).is('.cd-main-nav')) $(this).children('ul').toggleClass('is-visible');
+			});
+		});
+		</script>
+		
+		
+		<!--Script for altering svg extension to png using Modernizr when browser doesnt support svg-->
+		<script>
+		$(document).ready(function () {
+    	if (!Modernizr.svg) {
+        $('img[src$=".svg"]').each(function() {
+            var $img = $(this);
+            $img.attr('src', $img.attr('src').replace(/svg$/, 'png'));
+        });
+    }
+});
+		</script>
+	</body>
+</html>
